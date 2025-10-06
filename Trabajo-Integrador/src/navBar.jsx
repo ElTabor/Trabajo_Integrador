@@ -1,23 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import './stylesheets/navBar.css'
+
 
 export default function NavBar() {
     return (
         <div className="nav">
             <h1>PokeDex</h1>
-            <nav className="links">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/gallery">Gallery</Link>
-                    </li>
-                    <li>
-                        <Link to="/favourites">Favourites</Link>
-                    </li>
-                </ul>
+        <nav className="nav-links">
+                <Link to="/">INICIO</Link>
+                <Link to="/gallery">POKEDEX</Link>
+                <Link to="/favourites">FAVORITOS</Link>
             </nav>
         </div>
     )

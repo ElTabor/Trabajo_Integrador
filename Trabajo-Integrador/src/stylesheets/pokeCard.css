@@ -1,0 +1,30 @@
+.card {
+    border: black solid 5px;
+    border-radius: 1.5rem;
+    width: 200px;
+    height: 350px;
+
+    background-color: lightgray;
+
+    padding: 1rem;
+}
+
+.card #card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+.card img {
+    border: darkgray solid 3px;
+    border-radius: 1rem;
+    
+    width: 100%;
+    height: auto;
+}

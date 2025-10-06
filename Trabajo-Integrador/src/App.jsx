@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './stylesheets/App.css'
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './navBar.jsx'
+import Home from './home.jsx'
 import Gallery from './gallery.jsx'
 
 export default function App() {
@@ -33,9 +34,10 @@ export default function App() {
     <>
     <NavBar/>
     <Routes>  
-        <Route path="" element={<h1>HOME</h1>} />
+        <Route path="" element={<Home/>} />
         <Route path="/gallery" element={<Gallery pokeData={pokeData}/>}/>
-        <Route path="/favourites" element={<h1>FAVOURITES</h1>} />
+        <Route path="/favourites" element={<h1>FAVORITOS</h1>} />
+        <Route path="/pokemon/:id" element={<h1>DETALLES</h1>} />
       </Routes>
 
     </>

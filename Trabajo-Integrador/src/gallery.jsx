@@ -1,4 +1,5 @@
 import PokeCard from './pokeCard.jsx'
+import './stylesheets/gallery.css'
 
 export default function Gallery({pokeData}) {
 
