@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import PokeCard from "./pokeCard.jsx"
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import NavBar from './navBar.jsx'
+import Gallery from './gallery.jsx'
 
 export default function App() {
   
@@ -28,10 +30,14 @@ export default function App() {
   },[])
 
   return (
-    <div className="container">
-      {pokeData.map((pokemon, index) => (
-        <PokeCard key={index} pokemonData={pokemon}/>
-      ))}
-    </div>
+    <>
+    <NavBar/>
+    <Routes>  
+        <Route path="" element={<h1>HOME</h1>} />
+        <Route path="/gallery" element={<Gallery pokeData={pokeData}/>}/>
+        <Route path="/favourites" element={<h1>FAVOURITES</h1>} />
+      </Routes>
+
+    </>
   )
 }
