@@ -1,0 +1,12 @@
+
+.content {
+    max-width: 80vw;
+    justify-self: center;
+
+    margin:2rem;
+
+    border: black solid 3px;
+    border-radius: 1rem;
+
+    background-color: darkslateblue;
+}
