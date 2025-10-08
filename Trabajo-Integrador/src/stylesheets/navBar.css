@@ -13,17 +13,34 @@
     display: inline-block;
 }
 
-.nav-links{
+#navBar{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
-    font-size: 2rem;
 
     height: auto;
-    max-height: 3rem;
+    padding-bottom: 1rem;
+}
 
+#navBar button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#navBar button:hover {
+    border-color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
 }
