@@ -36,7 +36,9 @@
 
 .typeContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-evenly;
 
 
 }
