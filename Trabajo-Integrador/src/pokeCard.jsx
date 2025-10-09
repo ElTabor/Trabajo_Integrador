@@ -4,6 +4,8 @@ import './stylesheets/pokeCard.css'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 
+import PokeType from './pokeType.jsx'
+
 export default function PokeCard({pokemonData}) {
 
     const navigate = useNavigate();
@@ -20,9 +22,13 @@ export default function PokeCard({pokemonData}) {
             
             <span id="card-header">
                 <h2 id="name">{pokemonData.name}</h2>
-                <p id="type">TYPE</p>
+                <div className="typeContainer">
+                    {pokemonData.types.map((element, index) => (
+                        <PokeType key= {index} type={element.type.name}/>
+                    ))}
+                </div>
             </span>
-            <img id="card-image" src={pokemonData.sprites.front_default} alt="Pokemon Image" />
+            <img id="card-image" src={pokemonData.sprites.front_default} alt={pokemonData.name}/>
             
             <div className="info">
                 <p id="Abilities">Abilities: </p>
