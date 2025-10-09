@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './stylesheets/navBar.css'
@@ -7,11 +6,11 @@ import './stylesheets/navBar.css'
 export default function NavBar() {
     return (
         <div className="nav">
-            <h1>PokeDex</h1>
-        <nav className="nav-links">
-                <Link to="/">INICIO</Link>
-                <Link to="/gallery">POKEDEX</Link>
-                <Link to="/favourites">FAVORITOS</Link>
+            <h1>Pokemon Web</h1>
+            <nav id="navBar" className="navbar navbar-expand-lg">
+                <button className="btn btn-primary"><Link to="/">INICIO</Link></button>
+                <button className="btn btn-primary"><Link to="/gallery">POKEDEX</Link></button>
+                <button className="btn btn-primary"><Link to="/favourites">FAVORITOS</Link></button>
             </nav>
         </div>
     )

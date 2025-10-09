@@ -2,11 +2,16 @@
     border: black solid 5px;
     border-radius: 1.5rem;
     width: 200px;
-    height: 350px;
+    height: auto;
 
     background-color: lightgray;
 
+    color: black;
     padding: 1rem;
+}
+
+.card:hover {
+    border-color: white;
 }
 
 .card #card-header {
@@ -21,10 +26,25 @@
     text-transform: uppercase;
 }
 
-.card img {
-    border: darkgray solid 3px;
-    border-radius: 1rem;
-    
+#name {
+    font-size: medium;
+}
+
+.card #card-image{    
     width: 100%;
     height: auto;
+}
+
+.typeContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+
+
+}
+
+.typeContainer #badge {
+    margin: 0.1rem;
+    font-size: small;
 }
