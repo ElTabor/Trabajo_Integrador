@@ -37,8 +37,8 @@ export default function App() {
     <Routes>  
         <Route path="" element={<Home/>} />
         <Route path="/gallery" element={<Gallery pokeData={pokeData}/>}/>
-        <Route path="/favourites" element={<h1>FAVORITOS</h1>} />
         <Route path="/pokemon/:id" element={<PokemonDetails pokeData={pokeData}/>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
 
     </>

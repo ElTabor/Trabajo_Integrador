@@ -11,7 +11,6 @@ export default function NavBar() {
                 <nav id="navBar" className="navbar navbar-expand-lg">
                     <button className="btn btn-primary"><Link to="/">INICIO</Link></button>
                     <button className="btn btn-primary"><Link to="/gallery">POKEDEX</Link></button>
-                    <button className="btn btn-primary"><Link to="/favourites">FAVORITOS</Link></button>
                 </nav>
             </div>
         </div>
