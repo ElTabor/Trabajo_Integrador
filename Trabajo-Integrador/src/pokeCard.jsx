@@ -29,10 +29,6 @@ export default function PokeCard({pokemonData}) {
                 </div>
             </span>
             <img id="card-image" src={pokemonData.sprites.front_default} alt={pokemonData.name}/>
-            
-            <div className="info">
-                <p id="Abilities">Abilities: </p>
-            </div>
         </button>
     )
 }
